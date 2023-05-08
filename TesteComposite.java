@@ -11,6 +11,7 @@ public class TesteComposite {
         MenuComponent item2 = new PiraoDeQueijo();
         MenuComponent item3 = new Galinha();
         MenuComponent item4 = new Linguica();
+        MenuComponent item5 = new Refrigerante();
         
         menu1.add(menu2);
         menu1.add(menu3);
@@ -18,9 +19,8 @@ public class TesteComposite {
         menu2.add(item2);
         menu3.add(item3);
         menu3.add(item4);
+        menu3.add(item5);
         
         return menu1;
-        
-        
     }
 }
