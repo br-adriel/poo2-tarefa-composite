@@ -1,9 +1,5 @@
 public class BarTorrao extends Menu
 {
-    public BarTorrao() {
-        super();
-    }
-
     public String getName(){
         return "Bar do Torrao";
     }
