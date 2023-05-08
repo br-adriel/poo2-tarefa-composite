@@ -6,50 +6,17 @@ import java.util.ArrayList;
  * @author (seu nome) 
  * @version (um número da versão ou uma data)
  */
-public class MenuSobremesa extends MenuComponent
+public class MenuSobremesa extends Menu
 {
-    ArrayList<MenuComponent> menuComponents = new ArrayList<MenuComponent>();
-
-    public MenuSobremesa()
-    {
+    public String getName(){
+        return "Menu sobremesa";
     }
-
-    public void add(MenuComponent menuComponent){
-        menuComponents.add(menuComponent);
+    
+    public String getDescription(){
+        return "As melhores sobremesas que seu paladar pode querer";
     }
-
-    /*
-    public void remove(MenuComponent menuComponent){
-    menuComponents.remove(menuComponent);
-    }
-     */
-
-    public MenuComponent getChild(int i){
-        return menuComponents.get(i);
-    }
-
-    public String toString(){
-        String res = "\n"+getName()+",  "+getDescription()+(isVegetarian()?"(V)":"")+"---------------------";
-        for(MenuComponent m:menuComponents){
-            res += m.toString();
-        }
-        return res;
-    }
-
-    public void print(){
-        System.out.print("\n"+getName()+ (isVegetarian() ? " (V)": "") );
-        System.out.print(",  "+getDescription());
-        System.out.print("---------------------");
-        for(MenuComponent m:menuComponents){
-            m.print();
-        }
-    }
-
-    public boolean isVegetarian(){
-        boolean veg = true;
-        for(MenuComponent m:menuComponents){
-            veg = veg && m.isVegetarian();
-        }
-        return veg;
+    
+    public double getPrice(){
+        return 0;
     }
 }
