@@ -13,17 +13,19 @@ public class TesteComposite {
         MenuComponent item5 = new Refrigerante();
         MenuComponent item6 = new Sorvete();
         MenuComponent item7 = new Pudim();
-
-        menu1.add(menu2);
-        menu1.add(menu3);
+        
         menu2.add(item1);
         menu2.add(item2);
+        
         menu3.add(item3);
         menu3.add(item4);
         menu3.add(item5);
 
         menu4.add(item6);
         menu4.add(item7);
+        
+        menu1.add(menu2);
+        menu1.add(menu3);
         menu1.add(menu4);
 
         return menu1;

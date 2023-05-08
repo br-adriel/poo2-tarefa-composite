@@ -16,7 +16,7 @@ public class MenuSobremesa extends Menu
         return "As melhores sobremesas que seu paladar pode querer";
     }
     
-    public double getPrice(){
-        return 0;
+    public double getPrice() {
+        return super.getPrice();
     }
 }
